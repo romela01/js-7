@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+body{
+    height: 100vh;
+    background: url(https://st2.depositphotos.com/3343907/7289/i/950/depositphotos_72891057-stock-photo-information-concept.jpg);
+    background-size:cover;
+    background-position: center;
+    z-index: -2;
+}
+.content{
+    height: 100%;
+    position: relative;
+    font-family: 'Changa', sans-serif;
+}
+.main{
+    height: 80%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2%;
+    
+}
+.blar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index:-1 ;
+}
+.child-div{
+    width: 18%;
+    height: 40%;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 2;
+}
+.child-div:hover{
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.9);
+}
+.child-div ul{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.child-div ul{
+    transition: all 0.5s ease;
+}
+.child-div ul:hover{
+    transform: scale(1.1);
+}
+.child-div ul li:nth-child(1){
+    font-size: 42px;
+}
+.child-div ul li:nth-child(2){
+    font-size: 20px;
+}
+.child-div ul li:nth-child(3){
+    font-size: 18px;
+    color: crimson;
+}
+.blarDiv{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+
+}
+.buttons button{
+    margin: 0% 2%;
+    width: 20%;
+    color: crimson;
+    font-weight: 700;
+    font-size: 20px;
+    background-color:  rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.buttons button:hover{
+    background-color:crimson;
+    color: white; 
+
+}
+.buttons button:nth-child(1){
+    position: absolute;
+    left: 2%;
+    width: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.buttons button:nth-child(1):hover{
+    background-color: rgba(255, 0, 0, 0.7);
+}
+.fulloverlay{
+    display: none;
+}
+.overlay{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    display: none;
+}
+.window{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Redressed', cursive;
+}
+.blar2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.close{
+    display: flex;
+    justify-content: end;
+    height: fit-content;
+    height: 20%;
+    width: 100%;
+    padding:8px 15px;
+}
+.close i{
+    font-size: 32px;
+    color: red;
+    cursor: pointer;
+}
+.infos{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    padding: 5%;
+}
+.infos ul li:nth-child(1){
+    color: crimson;
+    font-size: 48px;
+    margin-bottom: 2%;
+}
+.infos ul li:nth-child(2),.infos ul li:nth-child(4) {
+    color: rgb(143, 7, 7);
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
